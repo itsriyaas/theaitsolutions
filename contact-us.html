@@ -182,7 +182,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <p>+91 9048577118
                             </p>
                         </div>
-                        <div class="contact-image">
+                        <div class="contact-image" style="margin-top: 85px;">
                             <figure class="image-anime">
                                 <img src="asset/images/contact-info-2.jpg" alt="No. 1 Web Development Company in India
                                 ">
@@ -203,8 +203,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </div>
                             <p>support@theaitsolutions.net</p>
                             
-                        </div>
-                        <div class="contact-image">
+                        </div> 
+                        <div class="contact-image" style="margin-top: 105px;">
                             <figure class="image-anime">
                                 <img src="asset/images/contact-info-3.jpg" alt="Best SEO Agency in Saudi India">
                             </figure>
@@ -461,11 +461,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <script>
- (function(){
-      emailjs.init({
-        publicKey: "PKk9S2ah0boEkdcyY",
-      });
-   })();
+  (function(){
+    emailjs.init({
+      publicKey: "PKk9S2ah0boEkdcyY",
+    });
+  })();
 
   document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
@@ -481,11 +481,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       msg: form.msg.value
     };
 
+    // Main email to your service
     emailjs.send("service_naulo2t", "template_jmvjxyj", formData)
       .then(function () {
         document.getElementById("msgSubmit").classList.remove("hidden");
         document.getElementById("msgSubmit").innerText = "Message sent successfully!";
         form.reset();
+
+        // Auto-reply to the sender
+        emailjs.send("service_naulo2t", "template_j5771b4", {
+          to_name: formData.fname,
+          to_email: formData.email
+        });
+
       }, function (error) {
         document.getElementById("msgSubmit").classList.remove("hidden");
         document.getElementById("msgSubmit").innerText = "Failed to send message.";
@@ -493,8 +501,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
   });
 </script>
+
 </body>
-
-<!-- Mirrored from demo.awaikenthemes.com/html-preview/weebix/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Aug 2024 05:22:45 GMT -->
-
 </html>

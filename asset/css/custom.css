@@ -600,6 +600,7 @@ header.main-header .header-sticky.active{
 	position: relative;
 	background: var(--secondary-color) url(../images/hero-bg.png) no-repeat bottom center;
 	padding: 20px;
+    padding-top: 60px;
 }
 
 .hero-content{
