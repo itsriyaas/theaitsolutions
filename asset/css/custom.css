@@ -151,7 +151,7 @@ body{
     overflow: hidden;
 }
 
-.reveal img{
+.reveal video{
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
@@ -621,7 +621,7 @@ header.main-header .header-sticky.active{
     margin: 0;
 }
 
-.hero-image img{
+.hero-image video{
 	border-radius: 40px;
 }
 
