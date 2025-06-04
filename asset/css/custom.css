@@ -1634,10 +1634,7 @@ header.main-header .header-sticky.active{
 	margin-right: 0;
 }
 
-.our-projects-nav ul li:hover{
-    background-image: linear-gradient(to right, #24a0ed  51%, #17c2e1  100%);
-	color: var(--white-color);
-}
+
 
 .our-projects-nav ul li a{ 
     font-size: 16px;
