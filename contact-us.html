@@ -461,7 +461,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <script>
-  (function(){
+  (function () {
     emailjs.init({
       publicKey: "PKk9S2ah0boEkdcyY",
     });
@@ -473,22 +473,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const form = this;
 
     const formData = {
-      fname: form.fname.value,
-      lname: form.lname.value,
-      phone: form.phone.value,
-      email: form.email.value,
-      subject: form.subject.value,
-      msg: form.msg.value
+      fname: form.fname.value.trim(),
+      lname: form.lname.value.trim(),
+      phone: form.phone.value.trim(),
+      email: form.email.value.trim(),
+      subject: form.subject.value.trim(),
+      msg: form.msg.value.trim()
     };
 
-    // Main email to your service
+    // Validation: check if any field is empty
+    if (!formData.fname || !formData.lname || !formData.phone || !formData.email || !formData.subject || !formData.msg) {
+      alert("Please fill in all fields before submitting the form.");
+      return;
+    }
+
+    // Send email to service
     emailjs.send("service_naulo2t", "template_jmvjxyj", formData)
       .then(function () {
         document.getElementById("msgSubmit").classList.remove("hidden");
         document.getElementById("msgSubmit").innerText = "Message sent successfully!";
         form.reset();
 
-        // Auto-reply to the sender
+        // Auto-reply to sender
         emailjs.send("service_naulo2t", "template_j5771b4", {
           to_name: formData.fname,
           to_email: formData.email
@@ -501,6 +507,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
   });
 </script>
-
 </body>
 </html>
