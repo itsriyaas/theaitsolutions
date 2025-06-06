@@ -289,7 +289,7 @@ body{
 .loading{
 	border: 1px solid transparent;
 	border-color: transparent var(--white-color) transparent var(--white-color);
-	animation: rotate-loading 1s linear 0s infinite normal;
+	animation: rotate-loading 0.5s linear 0s infinite normal;
 	transform-origin: 50% 50%;
 }
 
@@ -872,8 +872,10 @@ header.main-header .header-sticky.active{
 
 .works-content h2{
 	font-size: 26px;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	margin-bottom: 20px;
+    
+        color: #0b4b7f;
 }
 
 .works-content p{
@@ -2515,8 +2517,10 @@ header.main-header .header-sticky.active{
     }
 
     .hero{
+     
         background-image: none;
         padding: 50px 0;
+       
     }
 
     .hero-video-image{
@@ -2625,6 +2629,7 @@ header.main-header .header-sticky.active{
     .works-content h2{
         font-size: 24px;
         margin-bottom: 10px;
+        
     }
 
     .works-content{
