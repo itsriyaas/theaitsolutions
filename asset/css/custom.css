@@ -276,9 +276,9 @@ body{
 
 .loading-container,
 .loading{
-	height: 100px;
+	height: 400px;
 	position: relative;
-	width: 100px;
+	width: 400px;
 	border-radius: 100%;
 }
 
@@ -302,7 +302,7 @@ body{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	max-width: 66px;
+	max-width: 500px;
 	transform: translate(-50%, -50%);
 }
 
@@ -331,8 +331,8 @@ body{
 .section-title h3{
 	font-size: 20px;
 	font-weight: 700;
-	text-transform: capitalize;
-	color:#20649b;
+	text-transform: uppercase;
+	color:#0b4b7f;
 	margin-bottom: 10px;
 }
 
@@ -342,7 +342,8 @@ body{
 	letter-spacing: -0.05em;
 	font-weight: 700;
 	margin-bottom: 0;
-   
+   color: var(--accent-color);
+   text-transform: uppercase;
    
 }
 
@@ -423,7 +424,7 @@ header.main-header .header-sticky.active{
 	font-size: 16px;
 	font-weight: 700;
 	padding: 15px 10px !important;
-	color:#15161B;
+	color:var(--accent-color);
 	text-transform: capitalize;
 	transition: all 0.3s ease-in-out;
 }
@@ -438,7 +439,7 @@ header.main-header .header-sticky.active{
 
 .main-menu ul li a:hover,
 .main-menu ul li a:focus{
-	color: var(--accent-color);
+	color: black;
 }
 
 .main-menu ul ul{
@@ -621,34 +622,17 @@ header.main-header .header-sticky.active{
     margin: 0;
 }
 
-.hero-image video{
+#herooo{
 	border-radius: 40px;
+    width: 650px;
 }
 
 .hero-video-image{
 	position: relative;
 }
 
-.hero-play-button{
-	position: absolute;	top: 50%;
-	left: 0;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-}
 
-.hero-play-button i{
-	font-size: 26px;
-    background-image: linear-gradient(to right, #20649b 0%, #24a0ed  51%, #17c2e1  100%);
 
-	color: var(--white-color);
-	width: 90px;
-	height: 90px;
-	border: 7px solid var(--secondary-color);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
-}
 
 .hero-slider-image img{
     border-radius: 40px;
@@ -2574,7 +2558,10 @@ header.main-header .header-sticky.active{
         top: auto;
         transform: translate(50%, -50%);
     }
-
+  #herooo{
+	
+    width:100%;
+}
     .about-content ul{
         margin: 0 0 10px;
     }
