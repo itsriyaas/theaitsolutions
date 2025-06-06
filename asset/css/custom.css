@@ -276,9 +276,9 @@ body{
 
 .loading-container,
 .loading{
-	height: 400px;
+	height: 300px;
 	position: relative;
-	width: 400px;
+	width: 300px;
 	border-radius: 100%;
 }
 
@@ -302,7 +302,7 @@ body{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	max-width: 500px;
+	max-width: 300px;
 	transform: translate(-50%, -50%);
 }
 
@@ -601,7 +601,6 @@ header.main-header .header-sticky.active{
 	position: relative;
 	background: var(--secondary-color) url(../images/hero-bg.png) no-repeat bottom center;
 	padding: 20px;
-    padding-top: 60px;
 }
 
 .hero-content{
@@ -624,7 +623,8 @@ header.main-header .header-sticky.active{
 
 #herooo{
 	border-radius: 40px;
-    width: 650px;
+    width: 900px;
+    height: 400px;
 }
 
 .hero-video-image{
@@ -792,7 +792,8 @@ header.main-header .header-sticky.active{
 	font-size: 26px;
 	width: 100%;
 	max-width: 200px;
-	text-transform: capitalize;
+	text-transform: uppercase;
+    color: #0b4b7f;
 }
 
 .service-content-title a{
@@ -876,6 +877,7 @@ header.main-header .header-sticky.active{
 }
 
 .works-content p{
+    color: grey;
 	margin: 0;
 }
 
@@ -902,8 +904,9 @@ header.main-header .header-sticky.active{
 
 .why-choose-us-item h3{
 	font-size: 26px;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	margin-bottom: 20px;
+    color: #0b4b7f;
 }
 
 .why-choose-us-item p{
@@ -946,6 +949,9 @@ header.main-header .header-sticky.active{
 .explore-item-tags ul li{
 	display: inline-block;
 	margin-right: 20px;
+}
+.explore-item-tags ul li a{
+	text-transform: uppercase;
 }
 
 .explore-item-tags ul li:last-child{
@@ -1697,7 +1703,7 @@ header.main-header .header-sticky.active{
 
 .contact-content-title h2{
     font-size: 26px;
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 
 .contact-content-title a{
@@ -2037,6 +2043,9 @@ header.main-header .header-sticky.active{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #0b4b7f;
+    text-transform: uppercase;
+    
 }
 .service-entry h1{
     text-align: center;
