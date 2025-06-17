@@ -881,6 +881,7 @@ header.main-header .header-sticky.active{
 .works-content p{
     color: grey;
 	margin: 0;
+    text-align: justify;
 }
 
 /************************************/
